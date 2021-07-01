@@ -1,0 +1,6 @@
+test:
+  stage: test
+  script:
+    - echo "Hello"
+  tags:
+    - shell
