@@ -4,9 +4,3 @@ test:
     - echo "Hello"
   tags:
     - shell
-  rules:
-    - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event'
-      when: always
-    - if: $CI_EXTERNAL_PULL_REQUEST_IID
-      when: always
-    - when: never
