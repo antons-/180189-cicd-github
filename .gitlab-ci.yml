@@ -1,6 +1,14 @@
-test:
+should-succeed:
   stage: test
   script:
     - echo "Hello"
+  tags:
+    - shell
+
+should-fail:
+  stage: test
+  script:
+    - echo "fail"
+    - exit 1
   tags:
     - shell
