@@ -1,6 +1,7 @@
 should-succeed:
   stage: test
   script:
+    - sleep 60
     - echo "Hello"
   tags:
     - shell
